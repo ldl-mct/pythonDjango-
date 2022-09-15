@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人简介</title>
+    {% for i in allData %}
+    <style>
+        .box{width: 800px;height: 830px;margin: 20px auto;
+            border: 2px solid rgb(0, 0, 0);
+            background-color: rgba(174, 215, 245, 0.32);
+        }
+        .box1{height:120px;width: 110px;
+        position: relative;left: 350px;top:-200px ;}
+        .box2{height:50px;width: 400px;margin: auto;border-bottom: rgba(100, 149, 237, 0) dotted 2px;
+           position: relative;top: -150px }
+        .box3{ height: 250px;width: 400px;border: cornflowerblue dotted 2px;margin: auto;position: relative;top: -30px}
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <div >
+      <img src="/media/img/11.png" width="800px" >
+        <div class="box1">
+            <div class="news" style="width:150px; height:150px; border-radius:100%; overflow:hidden;">
+                <img src="/media/{{ i.src }}" height="260px" width="260px" border="0">
+            </div>
+        </div>
+        <div class="box2" ><h4 style="position: relative;top:30px">姓名:{{ i.xingming }}</h4> </div>
+
+        <div class="box2" style="position: relative;top:-50px;">
+          </tr>
+             <tr>
+                 <td> <h4 style="position: relative;top: -65px">性别：{{ i.gender }}</h4></td>
+                 <td><h4 style="position: relative;top: -105px;left: 300px">学号:{{ i.xuehao }}</h4></td>
+                 <td><h4 style="position: relative;top: -80px">电话:{{ i.dianhua }}</h4></td>
+             </tr>
+        </div>
+       <div class="box3">
+           <h4 style="position: relative;top: -10px;left: 5px">简介：{{ i.jianjie }}</h4>
+       </div>
+        </div><br><br><br><br><br><br>
+        {% endfor %}
+
+</div>
+</body>
+</html>

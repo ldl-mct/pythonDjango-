@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    {# 导入css文件#}
+    <link type="text/css" rel="stylesheet" href="media/css/style.css">
+    <style>
+        a {
+            text-decoration: none;
+        }
+        
+        body {
+            background: url("/media/img/bai.jpg") no-repeat;
+            background-size: 100%;
+        }
+        
+        .box
+        {
+            width: 400px;
+            height: 630px;
+            background: rgba(198, 222, 245, 0.66);
+            margin: 10px auto;
+            padding: 20px;
+            {
+                #position: relative;
+                top: 50px;
+            }
+        }
+        .box form input {
+            width: 300px;
+            height: 40px;
+            margin: 8px;
+        }
+        .box1 {
+            width: 300px;
+            height: 45px;
+            margin: 25px;
+            font-size: 20px;
+            text-align: center;
+            line-height: normal;
+            position: relative;
+            left: 15px;
+            top: -25px;
+            background-color: rgba(100, 132, 237, 0);
+            border: none
+        }
+        .box2 {
+            width: 300px;
+            height: 45px;
+            margin: 25px;
+            font-size: 20px;
+            text-align: center;
+            line-height: normal;
+            position: relative;
+            left: 15px;
+            top: -25px;
+            background-color: rgb(100, 132, 237);
+            border: none
+        }
+    </style>
+</head>
+<div class="box">
+    <h3 style="position: relative;left: 170px">注册</h3>
+    <form method="post" enctype="multipart/form-data">
+        <table border="0">
+            <tr>
+                <td>
+                    <p>姓名：</p>
+                </td>
+                <td><input type="text" placeholder="请输入真实姓名" name="xingming" style="position: relative;left: -320px"> </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>学号：</p>
+                </td>
+                <td> <input type="text" name="xuehao" style="position: relative;left: -320px"> </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>电话：</p>
+                </td>
+                <td> <input type="text" name="dianhua" style="position: relative;left: -320px"> </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>密码：</p>
+                </td>
+                <td><input type="password" placeholder="请输入密码" name="mima" style="position: relative;left: -320px"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>性别：</p>
+                </td>
+                <td><input type="radio" name="gender" id="man" style="width: 20px;height: 20px;position: relative;right: 290px">
+                    <label for="man" style="position: relative;right: 350px ;top: -5px">男</label></td>
+                <td><input type="radio" name="gender" id="weman" style="width: 20px;height: 20px; position: relative;right: 530px;top: 10px">
+                    <label for="weman" style="position: relative;right: 540px ;top: -20px">女</label> </td>
+                <tr>
+                    <tr>
+                        <tr>
+                            <td>
+                                <p>简介：</p>
+                            </td>
+                            <td> <textarea placeholder="请输入内容" name="jianjie" style="position: relative;left: -310px;height: 100px;width: 300px"></textarea> {# <input type="text" name="xuehao" style="position: relative;left: -320px;height: 100px "> </td>#}
+                        </tr>
+                        <td>
+                            <script type="text/javascript" src="/media/js/res.js"></script>
+                            <input type="file" name="src"><br>
+                            <a href="denglu" style="font-size:20px;position: relative;left: 120px;top: 25px">已注册：点击登录</a>
+                            <input class="box2" type="submit" style="width: 100px;position: relative;left: -20px">
+    </form>
+     </div>
+<div class="box1"></div>
+<div class="box1"></div>
+<div class="box1"></div>
+<script type="text/javascript" src="/media/js/res.js"></script>
+</body>
+</html>
